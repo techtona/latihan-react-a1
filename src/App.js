@@ -1,24 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Product from './Product';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Belajar React
-          </a>
+          <Product judul="Charger HP" harga="Rp. 10.000"/>
+          <Product judul="Charger HP" harga="Rp. 10.000"/>
+          <Product judul="Charger Laptop" harga="Rp. 100.000"/>
+          <Product judul="Charger Motor" harga="Rp. 1.000.000"/>
         </header>
       </div>
     );
