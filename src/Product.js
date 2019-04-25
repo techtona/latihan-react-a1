@@ -9,13 +9,13 @@ class Product extends React.Component {
                     <div className="card-image">
                         <img src={logo}/>
                         <br/><br/><br/><br/>
-                        <span class="card-title grey-text"><b>{this.props.judul}</b></span>
+                        <span className="card-title grey-text"><b>{this.props.judul}</b></span>
                     </div>
                     <div className="card-content">
                         <p>{this.props.keterangan}</p>
                     </div>
                     <div className="card-action">
-                        <a href="#" className="waves-effect waves-light red btn">Hapus
+                        <a onClick={this.props.hapusKartu} className="waves-effect waves-light red btn">Hapus
                             <i className="material-icons left">delete</i>
                         </a>
                     </div>
